@@ -1,6 +1,6 @@
 import React, { useContext } from "react";
 import "bootstrap-icons/font/bootstrap-icons.css";
-import "./app.css";
+import "./styles/app.css";
 import { MovieContext } from "./context/MovieContext";
 import MovieCard from "./components/MovieCard";
 
