@@ -27,7 +27,7 @@ const Movie = () => {
         );
       })
       .catch((err) => console.error(err));
-  }, []);
+  });
 
   return (
     <div className="movie">
