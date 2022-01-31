@@ -1,0 +1,26 @@
+.movie {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 50px;
+}
+
+.title {
+  font-size: 50px;
+  font-weight: bold;
+  margin: 10px 0 10px 0;
+}
+
+.rating {
+  font-size: 25px;
+  color: "#758283";
+}
+
+.right {
+  padding: 10px;
+}
+
+.single__img {
+  height: 400px;
+  border-radius: 10px;
+}
