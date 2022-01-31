@@ -13,13 +13,12 @@ const MovieRoutes = () => {
 
   let tmdbApi = `https://api.themoviedb.org/3/movie/upcoming?api_key=${process.env.REACT_APP_API_KEY}&language=en-US&page=${pageNo}`;
 
-  const fetchData = () => {
-    return fetch(tmdbApi)
-      .then((response) => response.json())
-      .catch((err) => console.error(err));
-  };
-
   useEffect(() => {
+    const fetchData = () => {
+      return fetch(tmdbApi)
+        .then((response) => response.json())
+        .catch((err) => console.error(err));
+    };
     fetchData()
       .then((data) => setMovies(data))
       .catch((err) => console.error(err));
